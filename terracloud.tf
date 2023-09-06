@@ -3,7 +3,7 @@ terraform {
     organization = "vlotltd"
 
     workspaces {
-      name = "homelab"
+      name = "homelab-terraform"
     }
   }
 }
