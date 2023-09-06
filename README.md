@@ -1,2 +1,1 @@
-# homelab-terraform
-Terraform setup for homelab
+1. use ```terraform login``` to log into terraform cloud and get token
