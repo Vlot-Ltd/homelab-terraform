@@ -60,7 +60,7 @@ variable "vm_defaultusername" {
   default     = "proxmox"
 }
 
-variable "vm_desc" {
+variable "vm_description" {
   description = "Sets the description seen in the web interface"
   type        = string
   default     = "VM created with Terraform"
