@@ -32,7 +32,7 @@ resource "proxmox_vm_qemu" "qemu_vm" {
     }
     // Cloud Init Settings
     ipconfig0 = var.vm_ipconfig0
-    sshkeys = var.vm_sshpublickey
+    sshkeys = var.vm_sshkeys
     ciuser = var.vm_defaultusername
     cipassword = var.vm_defaultpassword
 }

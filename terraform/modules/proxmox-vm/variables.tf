@@ -104,6 +104,12 @@ variable "vm_ipcidr" {
   default     = "/24"
 }
 
+variable "vm_ipgw" {
+  description = "IP default gateway"
+  type        = string
+  default     = "192.168.1.254"
+}
+
 variable "vm_ipconfig0" {
   description = "The first IP address to assign to the guest."
   type        = string
@@ -164,7 +170,7 @@ variable "vm_qemuagent" {
 variable "vm_searchdomain" {
   description = "Sets the DNS search domains for the container"
   type        = string
-  default      = ".local"
+  default      = "local"
 }
 
 variable "vm_serial" {
@@ -185,7 +191,7 @@ variable "vm_sockets" {
   default     = 1
 }
 
-variable "vm_sshpublickey" {
+variable "vm_sshkeys" {
   description = "Temp SSH public key that will be added to the container"
   type        = string
 }
