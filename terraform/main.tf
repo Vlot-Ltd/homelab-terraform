@@ -1,5 +1,5 @@
 resource "proxmox_vm_qemu" "qemu_vm" {
-  count       = 1
+  count       = 5
   name        = "testvm${count.index + 1}"
   target_node = "proxmox"
   clone       = "tpl-ubuntu-22-04"
