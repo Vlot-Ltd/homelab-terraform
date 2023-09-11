@@ -1,3 +1,11 @@
+## [0.0.3](https://github.com/Vlot-Ltd/homelab) - 20230911
+
+
+### Changed
+
+- Added salt-minion install (with autoregistration) to terraform poc build [#003_added_saltminion_install](https://github.com/Vlot-Ltd/homelab/issues/003_added_saltminion_install)
+
+
 ## [0.0.2](https://github.com/Vlot-Ltd/homelab) - 20230911
 
 
