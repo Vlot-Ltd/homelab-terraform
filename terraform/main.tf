@@ -35,7 +35,7 @@ resource "proxmox_vm_qemu" "qemu_vm" {
 connection {
     type     = "ssh"
     user     = "proxmox"
-    password ="proxmox"
+    password = "proxmox"
     host     = self.default_ipv4_address
   }
   provisioner "remote-exec" {
@@ -61,4 +61,8 @@ connection {
     ]
   }
 
+  provisioner "local-exec" {
+    command = "inspec exec https://github.com/dev-sec/linux-baseline --target=ssh://${self.default_ipv4_address} --user=proxmox --password=proxmox --reporter=cli json:inspec_logs/${self.name}_$(date +%Y%m%d_%H%M%S).json"
+    on_failure = continue
+  }
 }

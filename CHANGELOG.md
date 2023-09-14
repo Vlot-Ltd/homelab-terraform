@@ -1,3 +1,11 @@
+## [0.0.4](https://github.com/Vlot-Ltd/homelab) - 20230914
+
+
+### Changed
+
+- Added inspec check using generic hardening rules to terraform [#004_added_inspec_hardening_check](https://github.com/Vlot-Ltd/homelab/issues/004_added_inspec_hardening_check)
+
+
 ## [0.0.3](https://github.com/Vlot-Ltd/homelab) - 20230911
 
 
