@@ -33,3 +33,6 @@ override.tf.json
 # Ignore CLI configuration files
 .terraformrc
 terraform.rc
+
+# Ignore inspec logs as they don't really matter
+inspec_logs/
