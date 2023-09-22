@@ -1,7 +1,7 @@
 variable "proxmox_apiurl" {
   description = "This is the target Proxmox API endpoint"
   type        = string
-  default     = "https://192.168.2.20:8006/api2/json"
+  default     = "https://192.168.1.20:8006/api2/json"
 }
 
 variable "proxmox_host" {

@@ -1,3 +1,11 @@
+## [0.0.5](https://github.com/Vlot-Ltd/homelab) - 20230922
+
+
+### Changed
+
+- Fixed test build code and started on adding TreuNas capabilities [#005_Fixed_testvm_added_core_for_truenas](https://github.com/Vlot-Ltd/homelab/issues/005_Fixed_testvm_added_core_for_truenas)
+
+
 ## [0.0.4](https://github.com/Vlot-Ltd/homelab) - 20230914
 
 
