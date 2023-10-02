@@ -1,3 +1,16 @@
+## [0.0.6](https://github.com/Vlot-Ltd/homelab) - 20231002
+
+
+### Changed
+
+- WIP Restructure to get to modular/flexible setup [#006_WIP_restructure](https://github.com/Vlot-Ltd/homelab/issues/006_WIP_restructure)
+
+
+### Unreleased
+
+- Added an 'unreleased' option to towncrier, with example, to track future changes [#007_Adding_unreleased_to_towncrier](https://github.com/Vlot-Ltd/homelab/issues/007_Adding_unreleased_to_towncrier)
+
+
 ## [0.0.5](https://github.com/Vlot-Ltd/homelab) - 20230922
 
 

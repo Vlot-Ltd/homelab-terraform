@@ -1,4 +1,4 @@
 
 module "test" {
-  source = "./modules/modules/test-vm"
+  source = "./modules/examples/test-vm"
 }
