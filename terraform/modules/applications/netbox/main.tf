@@ -29,7 +29,7 @@ resource "proxmox_vm_qemu" "qemu_vm" {
     ]
   }
 
-  ipconfig0 = "ip=192.168.1.7,gw=192.168.1.254"
+  ipconfig0 = "ip=192.168.1.7/24,gw=192.168.1.254"
   sshkeys   = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILw4mdBvAc7uevh7LvM9tJ+wlRW1h9rCChdyzHIjYkHe"
 
 connection {
