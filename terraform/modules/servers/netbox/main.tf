@@ -11,12 +11,16 @@ resource "proxmox_vm_qemu" "qemu_vm" {
   memory      = 4196
   scsihw      = "virtio-scsi-pci"
   bootdisk    = "scsi0"
-  disk {
-    slot     = 0
-    size     = "150G"
-    type     = "scsi"
-    storage  = "vmosstorage"
-    format   = "raw"
+  disks {
+    scsi {
+      scsi0 {
+        disk {
+          size     = "150"
+          storage  = "vmosstorage"
+          format   = "raw"
+        }
+      }
+    }
   }
   network {
     model     = "virtio"

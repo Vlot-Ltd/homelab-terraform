@@ -1,8 +1,8 @@
 resource "proxmox_vm_qemu" "qemu_vm" {
-  os_type     = "cloud-init"
-  cpu         = "kvm64"
-  scsihw      = "virtio-scsi-pci"
-  bootdisk    = "scsi0"
+  os_type       = "cloud-init"
+  cpu           = "kvm64"
+  scsihw        = "virtio-scsi-pci"
+  bootdisk      = "scsi0"
   name          = var.vm_name
   target_node   = var.proxmox_host
   clone         = var.vm_templatename
@@ -41,7 +41,7 @@ resource "proxmox_vm_qemu" "qemu_vm" {
     ]
   }
 
-  ipconfig0 = "ip=${var.vm_ipaddr}${var.vm_ipcidr},gw=${var.vm_ipgw}"
+  ipconfig0 = "ip=${var.vm_ipaddress}${var.vm_ipcidr},gw=${var.vm_ipgw}"
   sshkeys = var.vm_sshkeys
   ciuser = var.vm_defaultusername
   cipassword = var.vm_defaultpassword
@@ -55,9 +55,8 @@ resource "proxmox_vm_qemu" "qemu_vm" {
 
   provisioner "remote-exec" {
     inline = [
-      "curl -o bootstrap-salt.sh -L https://bootstrap.saltproject.io",
-      "chmod +x bootstrap-salt.sh",
-      "sudo ./bootstrap-salt.sh -P onedir"
+      "curl -o bootstrap-salt.sh -L https://github.com/saltstack/salt-bootstrap/releases/latest/download/bootstrap-salt.sh",
+      "sudo sh bootstrap-salt.sh -P stable 3006.9"
     ]
   }
 

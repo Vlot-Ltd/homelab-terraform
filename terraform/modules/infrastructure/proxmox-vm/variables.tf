@@ -1,4 +1,4 @@
-variable "proxmox_apiurl" {
+variable "proxmox_api_url" {
   description = "This is the target Proxmox API endpoint"
   type        = string
   default     = "https://192.168.1.20:8006/api2/json"
@@ -10,7 +10,7 @@ variable "proxmox_host" {
   default     = "proxmox"
 }
 
-variable "proxmox_ignoretls" {
+variable "proxmox_ignore_tls" {
   description = "Disable TLS verification while connecting"
   type        = string
   default     = "true"
@@ -93,7 +93,6 @@ variable "vm_fullclone" {
 variable "vm_ipaddress" {
   description = "IP address of the VM"
   type        = string
-  default     = "192.168.1.60"
 }
 
 variable "vm_ipcidr" {

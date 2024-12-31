@@ -1,6 +1,6 @@
 resource "proxmox_vm_qemu" "qemu_vm" {
   count       = 1
-  name        = "netbox"
+  name        = "test"
   target_node = "proxmox"
   clone       = "tpl-ubuntu-22-04"
   os_type     = "cloud-init"

@@ -19,13 +19,13 @@ variable "proxmox_ignoretls" {
 variable "proxmox_token" {
   description = "API user token. Required, sensitive, or use environment variable TF_VAR_proxmox_token"
   type        = string
-  default     = "18164336-2fa8-4e26-9324-fd645c270c25"
+  default     = "8b94662d-6552-49a2-aa75-494fd414605b"
   sensitive   = true
 }
 
 variable "proxmox_user" {
   description = "This is the Proxmox API user. Use root@pam or custom. Will need PVEDatastoreUser, PVEVMAdmin, PVETemplateUser permissions"
   type        = string
-  default     = "terraform@pve!proxmoxterraform"
+  default     = "terraform-prov@pve!terraform"
   sensitive   = true
 }
