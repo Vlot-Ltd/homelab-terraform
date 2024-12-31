@@ -1,4 +1,4 @@
 
-module "test" {
-  source = "./modules/examples/test-vm"
+module "postgres" {
+  source = "./modules/servers/postgres"
 }

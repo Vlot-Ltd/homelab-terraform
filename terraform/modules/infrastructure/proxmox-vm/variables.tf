@@ -107,10 +107,10 @@ variable "vm_ipgw" {
   default     = "192.168.1.254"
 }
 
-variable "vm_ipconfig0" {
-  description = "The first IP address to assign to the guest."
-  type        = string
-}
+##variable "vm_ipconfig0" {
+  ##description = "The first IP address to assign to the guest."
+  ##type        = string
+##}
 
 variable "vm_memory" {
   description = "A number containing the amount of RAM to assign to the container (in MB)."
@@ -127,7 +127,7 @@ variable "vm_name" {
 variable "vm_nameserver" {
   description = "The DNS server IP address used by the container"
   type        = string
-  default     = "192.168.1.254"
+  default     = "192.168.1.6"
 }
 
 variable "vm_network" {
@@ -192,11 +192,6 @@ variable "vm_sshkeys" {
   description = "Temp SSH public key that will be added to the container"
   type        = string
   default     = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILw4mdBvAc7uevh7LvM9tJ+wlRW1h9rCChdyzHIjYkHe"
-}
-
-variable "vm_sshprivatekey" {
-  description = "Temp SSH private key for provisioning"
-  type        = string
 }
 
 variable "vm_targetplatform" {
