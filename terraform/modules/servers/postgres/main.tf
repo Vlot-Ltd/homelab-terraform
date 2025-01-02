@@ -5,6 +5,10 @@ locals {
 
 module "postgres" {
     source = "../../infrastructure/proxmox-vm"
-    vm_name = local.vm_name
+
+    proxmox_token = var.proxmox_token
+    proxmox_user  = var.proxmox_user
+
+    vm_name      = local.vm_name
     vm_ipaddress = local.vm_ipaddress
 }
